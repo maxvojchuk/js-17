@@ -2,8 +2,9 @@
 const input = document.querySelector("#input");
 const button = document.querySelector("#button");
 const changeButton = () => {
-  const input = textField.value;
-  button.textContent = input;
+  if (input.value) {
+    button.textContent = input.value;
+  }
 };
 button.addEventListener("click", changeButton);
 //2
